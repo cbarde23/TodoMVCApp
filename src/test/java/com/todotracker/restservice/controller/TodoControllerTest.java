@@ -34,7 +34,6 @@ class TodoControllerTest {
     @MockBean
     TodoRepo repository;
 
-
     private TodoItem taskCreation(long id, String title, String status) {
         return new TodoItem(id, title, status);
     }
