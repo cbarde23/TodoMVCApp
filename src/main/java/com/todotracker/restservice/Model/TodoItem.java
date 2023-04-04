@@ -2,7 +2,9 @@ package com.todotracker.restservice.Model;
 
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.persistence.Id;
 
 @Entity
 public class TodoItem {
@@ -48,7 +50,7 @@ public class TodoItem {
         this.status = status;
     }
 
-   
+
 
 }
 
