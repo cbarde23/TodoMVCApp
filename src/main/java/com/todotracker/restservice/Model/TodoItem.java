@@ -48,30 +48,7 @@ public class TodoItem {
         this.status = status;
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        if (obj == this)
-            return true;
-        if (!(obj instanceof TodoItem))
-            return false;
-        TodoItem item = (TodoItem) obj;
-
-        if (item.id == this.id && item.status == this.status && this.title == item.title) {
-            return true;
-        } else return false;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = 17;
-        if (title != null) {
-            result = 31 * result + title.hashCode();
-        }
-        if (status != null) {
-            result = 31 * result + status.hashCode();
-        }
-        return result;
-    }
+   
 
 }
 
