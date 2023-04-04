@@ -18,11 +18,11 @@ import java.util.stream.Collectors;
  * dev: Chetan Barde
  * date:2nd April 2023
  * Request:
- *  {
- *   "id": 1,
- *   "title" : "MyTask",
- *   "status": "open"
- *  }
+ * {
+ * "id": 1,
+ * "title" : "MyTask",
+ * "status": "open"
+ * }
  */
 
 @RestController
@@ -75,12 +75,6 @@ public class TodoController {
      * @param TodoItem object
      * @return TodoItem Object will be returned
      * sample url http://localhost:8080/todo
-     * request:
-     * {
-     * "id": 1,
-     * "title" : "MyTask",
-     * "status": "open"
-     * }
      */
     @PostMapping
     public TodoItem addITem(@Valid @NotNull @RequestBody TodoItem item) {
@@ -92,12 +86,7 @@ public class TodoController {
      * It will delete the task object
      *
      * @param TodoItem sample url http://localhost:8080/todo with request
-     *                 request:
-     *                 {
-     *                 "id": 1,
-     *                 "title" : "MyTask",
-     *                 "status": "open"
-     *                 }
+     *
      */
     @DeleteMapping
     public void removeItem(@RequestBody TodoItem item) {
@@ -128,7 +117,6 @@ public class TodoController {
      *
      * @param TodoItem
      * @return sample url http://localhost:8080/todo
-     *
      */
     @PatchMapping
     public TodoItem updateTodoField(@RequestBody TodoItem item) {

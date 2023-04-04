@@ -50,7 +50,5 @@ public class TodoItem {
         this.status = status;
     }
 
-
-
 }
 
